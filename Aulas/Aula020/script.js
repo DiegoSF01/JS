@@ -12,5 +12,9 @@ document.querySelector("#titulo");
 
 
 function clicou(){
-    alert("Você é GAY!");
+    alert("Clicou no botão!");
 }
+
+let botao = document.querySelector(".botao2");
+
+botao.addEventListener("click", clicou);
