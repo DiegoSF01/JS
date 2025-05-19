@@ -4,6 +4,8 @@ let pessoa = {
     idade: 18,
     nomecompleto: function(){
         return `${this.nome} ${this.sobrenome}`;
+        
+        //return `${pessoa.nome} ${pessoa.sobrenome}`;
     }
 }
 
