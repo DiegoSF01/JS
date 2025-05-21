@@ -34,7 +34,7 @@ function clicou(){
 
     console.log(ul.children[0].innerText);
 
-    ul.children[0].innerText = 'a';
+    ul.children[0].innerText == 'a';
     ul.children[0].innerText += 'a';
 
 
@@ -46,7 +46,30 @@ function clicou(){
 
     // adiciona no final
     // ul.append(newli);
+
+    // adiciona no inicio
     ul.prepend(newli);
+
+    let newbotao = document.createElement('button');
+    newbotao.innerText = 'Novo Botão';
+
+    ul.after(newbotao);
+
+    let newul = document.createElement('ul');
+
+    for(i = 1; i <= 5; i++){
+        let newli2 = document.createElement('li');
+        newli2.innerText = "li " + i;
+        newul.append(newli2);
+    }
+
+    ul.before(newul);
+
+    let input = document.querySelector('input');
+
+    console.log(input.getAttribute('type'));
+    console.log(input.hasAttribute('placeholder'));
+    input.setAttribute('placeholder', 'Alterado');
 }
 
 let botao = document.querySelector(".botao2");
