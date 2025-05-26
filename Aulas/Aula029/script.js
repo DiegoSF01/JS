@@ -1,29 +1,21 @@
-class Character{
+let char = new Mago('Diego');
+let monster = new LittleMonster();
 
-    _life = 1;
-    maxlife = 1;
-    attack = 0;
-    defense = 0;
+/*
+console.log(char.name);
+console.log(char.life);
+console.log(char.attack);
 
-    constructor(name){
-        this.name = name;
-    }
+console.log(monster.name);
+console.log(monster.life);
+console.log(monster.attack);
+*/
 
-    get life(){
-        this._life;
-    }
+const stage = new Stage(
+    char,
+    monster,
+    document.querySelector('#char'),
+    document.querySelector('#monster')
+);
 
-    set life(newlife){
-        this._life = newlife < 0 ? 0 : newlife;
-    }
-}
-
-class Knight extends Character{
-    constructor(name){
-        super(name);
-        this.life = 100;
-        this.attack = 0;
-        this.defense = 8;
-        this.maxlife = this.life;
-    }
-}
+stage.start();
