@@ -1,6 +1,7 @@
-let char = new Mago('Diego');
-let monster = new LittleMonster();
+let log = new Log(document.querySelector('.log'));
 
+let char = new Mago('Diego');
+let monster = new BigMonster();
 /*
 console.log(char.name);
 console.log(char.life);
@@ -15,7 +16,8 @@ const stage = new Stage(
     char,
     monster,
     document.querySelector('#char'),
-    document.querySelector('#monster')
+    document.querySelector('#monster'),
+    log
 );
 
 stage.start();
