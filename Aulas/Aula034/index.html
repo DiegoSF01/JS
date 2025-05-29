@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <h1>Qual seu sintoma</h1>
+
+    <select name="select" id="select">
+        <option value="">sintomas</option>
+        <option value="tosse">tosse</option>
+        <option value="febre">febre</option>
+        <option value="diarreia">diarreia</option>
+        <option value="dor no corpo">dor no corpo</option>
+        <option value="dor de cabeca">dor de cabeça</option>
+        <option value="nariz escorrendo">nariz escorrendo</option>
+    </select>
+
+    <br>
+
+    <button onclick="clicou()">Verifique o diagnóstico</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
